@@ -12,10 +12,19 @@ github_username:  jekyll
 # Build settings
 markdown: kramdown
 
+defaults:
+  -
+    scope:
+      path: 'admin'
+    values:
+      sitemap: false
+
 collections:
     ressources:
         output: true
         permalink: /:collection/:name
+
+exclude: ["Gemfile","Gemfile.lock","generate-photo-galleries.sh", "*.gallerie.conf", ".*.conf"]
 
 gems:
  - jekyll-sitemap
@@ -24,9 +33,7 @@ gems:
 sitemap:
     file: "/sitemap.xml"
     exclude:
-        - "/atom.xml"
         - "/feed.xml"
-        - "/feed/index.xml"
     include_posts:
         - "/writing/"
     change_frequency_name: "change_frequency"
