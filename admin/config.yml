@@ -46,6 +46,7 @@ collections: # A list of collections the CMS should be able to edit
         file: "index.md"
         fields:
           - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
+          - {label: "Contenu", name: "body", widget: "markdown"}
       - name: "about"
         label: "À propos"
         file: "about.md"
@@ -54,3 +55,4 @@ collections: # A list of collections the CMS should be able to edit
           - {label: "Lien parmanent", name: "permalink", widget: "hidden", default: "/about"}
           - {label: "Titre", name: "title", widget: "string"}
           - {label: "Header Image", name: "header-img", widget: "image"}
+          - {label: "Contenu", name: "body", widget: "markdown"}
