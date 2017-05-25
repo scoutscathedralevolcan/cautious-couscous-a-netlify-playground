@@ -3,7 +3,7 @@ layout: default
 ---
 
 <div class="home">
-    {% for navscroll_item in site.data.sitemenu.scrollnav2 %}
+    {% for navscroll_item in site.data.sitemenu.scrollnav %}
         {% if navscroll_item.label != "hidden" %}
         <!-- {{ navscroll_item.label }} Section -->
         {% endif %}
