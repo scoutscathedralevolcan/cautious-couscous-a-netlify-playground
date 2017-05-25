@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "A second post for the latin man"
+title:  "Latin is fun... We want a lot of latin!"
 date:   2017-05-21 17:55:04
 categories: actu
 ---

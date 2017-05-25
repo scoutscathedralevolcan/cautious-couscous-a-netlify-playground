@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "An initiation to Jekyll!"
 date:   2015-08-26 19:55:04
 categories: actu
 ---
