@@ -1,3 +1,14 @@
 scrollnav:
+    - hidden: "front-section"
     - À propos: "about"
-    - hidden: "hiden-section"
+    - Nos unités: "units"
+    - hidden: "activities"
+    - hidden: "being"
+    - Nouvelles: "latest-news"
+    - Nous joindre: "contact-us"
+
+pagesnav:
+    - Histoire: "/history"
+    - Animation: "/animation"
+    - Gestion: "/gestion"
+    - Actualité: "/actu"

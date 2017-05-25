@@ -6,36 +6,8 @@ backend:
 media_folder: "img/uploads" # Folder where user uploaded files should go
 
 collections:
-  - name: "pages"
-    label: "Pages"
-    files:
-      - name: "home"
-        label: "Accueil"
-        file: "index.md"
-        fields:
-          - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
-          - {label: "Lien parmanent", name: "permalink", widget: "hidden", default: "/"}
-          - {label: "Contenu", name: "body", widget: "markdown"}
-      - name: "history"
-        label: "Histoire"
-        file: "history.md"
-        fields:
-          - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
-          - {label: "Lien parmanent", name: "permalink", widget: "hidden", default: "/history"}
-          - {label: "Titre", name: "title", widget: "string"}
-          - {label: "Header Image", name: "header-img", required: false, widget: "image"}
-          - {label: "Contenu", name: "body", widget: "markdown"}
-
-  - name: "home-section"
-    label: "Section page d'accueil"
-    folder: "_includes/home-section"
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - {label: "Contenu", name: "body", widget: "text"}
-
   - name: "post"
-    label: "Post"
+    label: "Actualité"
     folder: "_posts"
     sort: "date:desc"
     create: true
@@ -62,16 +34,65 @@ collections:
     meta:
       - {label: "Date de publication", name: "date", widget: "datetime", format: "YYYY-MM-DD hh:mm:ss"}
 
+  - name: "pages"
+    label: "Pages"
+    files:
+      - name: "home"
+        label: "Accueil"
+        file: "index.md"
+        fields:
+          - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
+          - {label: "Lien parmanent", name: "permalink", widget: "hidden", default: "/"}
+          - {label: "Contenu", name: "body", widget: "markdown"}
+      - name: "history"
+        label: "Histoire"
+        file: "history.md"
+        fields:
+          - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
+          - {label: "Lien parmanent", name: "permalink", widget: "hidden", default: "/history"}
+          - {label: "Titre", name: "title", widget: "string"}
+          - {label: "Header Image", name: "header-img", required: false, widget: "image"}
+          - {label: "Contenu", name: "body", widget: "markdown"}
+
+  - name: "home-section"
+    label: "Sections de la page d'accueil"
+    files:
+      - name: "about"
+        label: "À propos"
+        file: "_includes/home-section/about.md"
+        fields:
+          - {label: "Contenu", name: "body", widget: "markdown"}
+      - name: "front-message"
+        label: "Information mise à l'avant"
+        file: "_includes/home-section/front-section.md"
+        fields:
+          - {label: "Contenu", name: "body", widget: "markdown"}
+      - name: "activites"
+        label: "Calendrier des activités"
+        file: "_includes/home-section/activities.md"
+        fields:
+          - {label: "Contenu", name: "body", widget: "markdown"}
+      - name: "being"
+        label: "Être"
+        file: "_includes/home-section/being.md"
+        fields:
+          - {label: "Contenu", name: "body", widget: "markdown"}
+      - name: "contact-us"
+        label: "Nous joindre"
+        file: "_includes/home-section/contact-us.md"
+        fields:
+          - {label: "Contenu", name: "body", widget: "markdown"}
+
   - name: "settings"
     label: "Options du site"
     editor:
       preview: false
     files:
       - name: "colors"
-        label: "Colors"
+        label: "Couleurs"
         file: "_data/colors.yml"
         fields:
-          - {label: "Contenu", name: "body", widget: "text"}
+          - {label: "Contenu", name: "body", widget: "markdown"}
       - name: "sitemenu"
         label: "Menu principal"
         file: "_data/sitemenu.yml"

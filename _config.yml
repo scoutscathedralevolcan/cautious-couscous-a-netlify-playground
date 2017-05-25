@@ -18,16 +18,28 @@ defaults:
       path: 'admin'
     values:
       sitemap: false
+  -
+    scope:
+      path: "_posts"
+      type: "posts"
+    values:
+      permalink: /actu/:year/:month/:day/:title/
+      layout: post
+      alt: image-alt
 
 collections:
     ressources:
         output: true
         permalink: /:collection/:name
 
+paginate: 6
+paginate_path: "/actu/all/page:num"
+
 exclude: ["Gemfile","Gemfile.lock","generate-photo-galleries.sh", "*.gallerie.conf", ".*.conf"]
 
 gems:
  - jekyll-sitemap
+ - jekyll-paginate
 
 # SiteMap
 sitemap:
