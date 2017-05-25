@@ -81,6 +81,19 @@ collections:
     editor:
       preview: false
     files:
+      - name: "general-settings"
+        label: "Options générales"
+        file: "_data/general-settings.yml"
+        fields:
+          - {label: "Titre du site", name: "site-title", widget: "string"}
+           - {label: "Logo", name: "logo", widget: "image"}
+          - {label: "Description du site", name: "site-description", widget: "text"}
+          - {label: "Adresse courriel", name: "email", widget: "string"}
+          - {label: "Propriétaire", name: "owner", widget: "string"}
+          - {label: "Nom d'utilisateur github", name: "github_username", widget: "string"}
+          - {label: "Nom d'utilisateur Facebook", name: "facebook_username", widget: "string"}
+          - {label: "Nom d'utilisateur Twitter", name: "twitter_username", widget: "string"}
+          - {label: "Nombre de posts à afficher sur la page d'accueil (0 = tout les posts)", name: "pagination-post-on-home-page", widget: "number"}
       - name: "colors"
         label: "Couleurs"
         file: "_data/colors.yml"
