@@ -4,6 +4,7 @@ backend:
   branch: master
 
 media_folder: "img/uploads" # Folder where user uploaded files should go
+publish_mode: editorial_workflow
 
 collections:
   - name: "post"
@@ -41,48 +42,10 @@ collections:
     slug: "{{slug}}"
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
-      - {label: "Lien parmanent", name: "permalink", widget: "string", default: "/new-page-{{year}}-{{month}}-{{day}}{{year}}-{{slug}}"}
+      - {label: "Lien parmanent", name: "permalink", widget: "string", default: "/new-page"}
       - {label: "Titre", name: "title", widget: "string"}
       - {label: "Header Image", name: "header-img", required: false, widget: "image"}
       - {label: "Contenu", name: "body", widget: "markdown"}
-
-  #- name: "pages"
-    #label: "Pages"
-    #files:
-      #- name: "home"
-        #label: "Accueil"
-        #file: "index.md"
-        #fields:
-          #- {label: "Layout", name: "layout", widget: "hidden", default: "page"}
-          #- {label: "Lien parmanent", name: "permalink", widget: "hidden", default: "/"}
-          #- {label: "Contenu", name: "body", widget: "markdown"}
-      #- name: "history"
-        #label: "Histoire"
-        #file: "history.md"
-        #fields:
-          #- {label: "Layout", name: "layout", widget: "hidden", default: "page"}
-          #- {label: "Lien parmanent", name: "permalink", widget: "hidden", default: "/history"}
-          #- {label: "Titre", name: "title", widget: "string"}
-          #- {label: "Header Image", name: "header-img", required: false, widget: "image"}
-          #- {label: "Contenu", name: "body", widget: "markdown"}
-      #- name: "animation"
-        #label: "Animation"
-        #file: "animation.md"
-        #fields:
-          #- {label: "Layout", name: "layout", widget: "hidden", default: "page"}
-          #- {label: "Lien parmanent", name: "permalink", widget: "hidden", default: "/animation"}
-          #- {label: "Titre", name: "title", widget: "string"}
-          #- {label: "Header Image", name: "header-img", required: false, widget: "image"}
-          #- {label: "Contenu", name: "body", widget: "markdown"}
-      #- name: "gestion"
-        #label: "Gestion"
-        #file: "gestion.md"
-        #fields:
-          #- {label: "Layout", name: "layout", widget: "hidden", default: "page"}
-          #- {label: "Lien parmanent", name: "permalink", widget: "hidden", default: "/gestion"}
-          #- {label: "Titre", name: "title", widget: "string"}
-          #- {label: "Header Image", name: "header-img", required: false, widget: "image"}
-          #- {label: "Contenu", name: "body", widget: "markdown"}
 
   - name: "home-section"
     label: "Sections de la page d'accueil"
