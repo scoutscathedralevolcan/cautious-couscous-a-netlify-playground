@@ -1,13 +1,7 @@
-development:
-  backend:
-    name: netlify-api
-    url: http://localhost:8080
-
-production:
-  backend:
-    name: github-api
-    repo: scoutscathedralevolcan/cautious-couscous-a-netlify-playground
-    branch: master
+backend:
+  name: github
+  repo: scoutscathedralevolcan/cautious-couscous-a-netlify-playground
+  branch: master
 
 media_folder: "img/uploads" # Folder where user uploaded files should go
 
@@ -22,7 +16,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
       - {label: "Titre", name: "title", widget: "string", tagname: "h1"}
       - {label: "Contenu", name: "body", widget: "markdown"}
-      - {label: "Categories", name: "categories", widget: "string"}
+      - {label: "Categories", name: "categories", widget: "string", default: "actu"}
     meta: # Meta data fields. Just like fields, but without any preview element
       - {label: "Date de publication", name: "date", widget: "datetime", format: "YYYY-MM-DD hh:mm:ss"}
   - name: "ressources" # Used in routes, ie.: /admin/collections/:slug/edit
@@ -54,5 +48,5 @@ collections: # A list of collections the CMS should be able to edit
           - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
           - {label: "Lien parmanent", name: "permalink", widget: "hidden", default: "/about"}
           - {label: "Titre", name: "title", widget: "string"}
-          - {label: "Header Image", name: "header-img", widget: "image"}
+          - {label: "Header Image", name: "header-img", required: false, widget: "image"}
           - {label: "Contenu", name: "body", widget: "markdown"}
