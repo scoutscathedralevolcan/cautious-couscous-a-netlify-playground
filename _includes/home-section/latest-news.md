@@ -1,5 +1,5 @@
 <ul class="post-list">
-    {% for post in site.posts limit:5 %}
+    {% for post in site.posts limit: site.data.general-settings.pagination-post-on-home-page %}
       <li>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 

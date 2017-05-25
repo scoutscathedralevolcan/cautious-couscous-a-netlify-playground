@@ -86,7 +86,7 @@ collections:
         file: "_data/general-settings.yml"
         fields:
           - {label: "Titre du site", name: "site-title", widget: "string"}
-           - {label: "Logo", name: "logo", widget: "image"}
+          - {label: "Logo", name: "logo", required: false, widget: "image"}
           - {label: "Description du site", name: "site-description", widget: "text"}
           - {label: "Adresse courriel", name: "email", widget: "string"}
           - {label: "Propriétaire", name: "owner", widget: "string"}
