@@ -14,6 +14,7 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
+    overflow-x: hidden;
     font-family: $base-font-family;
     font-size: $base-font-size;
     line-height: $base-line-height;
@@ -23,16 +24,55 @@ body {
     -webkit-text-size-adjust: 100%;
 }
 
+.text-muted {
+    color: $muted-color;
+}
 
+.text-primary {
+    color: $text-color;
+}
 
-/**
- * Set `margin-bottom` to maintain vertical rhythm
- */
-h1, h2, h3, h4, h5, h6,
-p, blockquote, pre,
-ul, ol, dl, figure,
-%vertical-rhythm {
-    margin-bottom: $spacing-unit / 2;
+p {
+    font-size: 18px;
+    margin-bottom:1.5em
+}
+
+p.large {
+    font-size: 22px;
+    margin-bottom:1.5em
+}
+
+a,
+a:hover,
+a:focus,
+a:active,
+a.active {
+    outline: 0;
+}
+
+a {
+    color:  $links-base-color;
+}
+
+a:hover,
+a:focus,
+a:active,
+a.active {
+    color:  $links-interact-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $base-font-family;
+    font-weight: 700;
+}
+
+.img-centered {
+    margin: 0 auto;
 }
 
 
@@ -74,33 +114,6 @@ li {
     }
 }
 
-
-
-/**
- * Headings
- */
-h1, h2, h3, h4, h5, h6 {
-    font-weight: 300;
-}
-
-
-
-/**
- * Links
- */
-a {
-    color: $brand-color;
-    text-decoration: none;
-
-    &:visited {
-        color: darken($brand-color, 15%);
-    }
-
-    &:hover {
-        color: $text-color;
-        text-decoration: underline;
-    }
-}
 
 
 
@@ -196,9 +209,5 @@ pre {
         width: 16px;
         height: 16px;
         vertical-align: middle;
-
-        path {
-            fill: $grey-color;
-        }
     }
 }

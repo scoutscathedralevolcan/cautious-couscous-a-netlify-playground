@@ -3,7 +3,7 @@ backend:
   repo: scoutscathedralevolcan/cautious-couscous-a-netlify-playground
   branch: master
 
-media_folder: "img/uploads" # Folder where user uploaded files should go
+media_folder: "img"
 publish_mode: editorial_workflow
 
 collections:
@@ -16,8 +16,10 @@ collections:
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
       - {label: "Titre", name: "title", widget: "string", tagname: "h1"}
+      - {label: "Auteur", name: "author", widget: "string"}
+      - {label: "Header Image", name: "header-img", required: false, widget: "image"}
       - {label: "Contenu", name: "body", widget: "markdown"}
-      - {label: "Categories", name: "categories", widget: "string", default: "actu"}
+      - {label: "Categories", name: "categories", widget: "hidden", default: "actu"}
     meta:
       - {label: "Date de publication", name: "date", widget: "datetime", format: "YYYY-MM-DD hh:mm:ss"}
 
@@ -30,6 +32,7 @@ collections:
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
       - {label: "Titre", name: "title", widget: "string", tagname: "h1"}
+      - {label: "Header Image", name: "header-img", required: false, widget: "image"}
       - {label: "Contenu", name: "body", widget: "markdown"}
       - {label: "Categories", name: "categories", widget: "string"}
     meta:
@@ -86,7 +89,7 @@ collections:
         file: "_data/general-settings.yml"
         fields:
           - {label: "Titre du site", name: "site-title", widget: "string"}
-          - {label: "Logo", name: "logo", required: false, widget: "image"}
+          - {label: "Logo", name: "site-logo", required: false, widget: "image"}
           - {label: "Description du site", name: "site-description", widget: "text"}
           - {label: "Adresse courriel", name: "email", widget: "string"}
           - {label: "Propriétaire", name: "owner", widget: "string"}
@@ -98,8 +101,27 @@ collections:
         label: "Couleurs"
         file: "_data/colors.yml"
         fields:
+          - {label: "Couleur de fond", name: "background-color", widget: "string"}
           - {label: "Couleur de fond section A", name: "section-a-background", widget: "string"}
           - {label: "Couleur de fond section B", name: "section-b-background", widget: "string"}
+          - {label: "Couleur principale du texte", name: "primary-text-color", widget: "string"}
+          - {label: "Couleur secondaire du texte", name: "secondary-text-color", widget: "string"}
+          - {label: "Couleur dégradée du texte", name: "muted-color", widget: "string"}
+          - {label: "Couleur des liens", name: "links-base-color", widget: "string"}
+          - {label: "Couleur des lien lors d'intéraction", name: "links-interact-color", widget: "string"}
+          - {label: "Couleur 1 du menu", name: "menu-primary-color", widget: "string"}
+          - {label: "Couleur 2 du menu", name: "menu-secondary-color", widget: "string"}
+          - {label: "Couleur de fond du menu", name: "menu-background-color-over", widget: "string"}
+          - {label: "Couleur de fond du menu en entête", name: "menu-background-color", widget: "string"}
+          - {label: "Couleur du pied de page", name: "footer-background-color", widget: "string"}
+          - {label: "Couleur du texte dans le pied de page", name: "footer-text-color", widget: "string"}
+          - {label: "Brand color", name: "brand-color", widget: "string"}
+      - name: "fonts"
+        label: "Polices de carractères"
+        file: "_data/fonts.yml"
+        fields:
+          - {label: "Police de base", name: "primary-font", widget: "string"}
+          - {label: "Police secondaire", name: "secondary-font", widget: "string"}
       - name: "sitemenu"
         label: "Menu principal"
         file: "_data/sitemenu.yml"

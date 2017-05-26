@@ -10,5 +10,11 @@
   <link rel="canonical" href="{{ page.url | replace:'index.html',''  }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.data.general-settings.site-title }}" href="feed.xml" />
   
-  <script src="{{ site.url }}/js/jquery-1.11.2.min.js"></script>
+{% if jekyll.environment == "production" %}
+      <script>
+        if (window.location.protocol != 'https:') {
+            window.location = window.location.toString().replace(/^http:/, "https:");
+        }
+      </script>
+{% endif %}
 </head>

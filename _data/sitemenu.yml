@@ -5,7 +5,7 @@ scrollnav:
       path: "about"
     - label: "Nos unités"
       path: "units"
-    - label: "hidden"
+    - label: "Calendrier"
       path: "activities"
     - label: "hidden"
       path: "being"

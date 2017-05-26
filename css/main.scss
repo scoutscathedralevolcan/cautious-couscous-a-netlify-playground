@@ -6,26 +6,46 @@
 
 
 // Our variables
-$base-font-family: Helvetica, Arial, sans-serif;
+$base-font-family: {{ site.data.fonts.primary-font }};
+$secondary-font-family: {{ site.data.fonts.secondary-font }};
+$menu-font-family:  {{ site.data.fonts.menu-font }};
 $base-font-size:   16px;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 
 $spacing-unit:     30px;
 
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
+$text-color:        {{ site.data.colors.primary-text-color }};
+$secondary-text-color:  {{ site.data.colors.secondary-text-color }};
 
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
+$brand-color:       {{ site.data.colors.brand-color }};
+$muted-color:       {{ site.data.colors.muted-color }};
+
+$grey-color:        #828282;
+$grey-color-light:  lighten($grey-color, 40%);
+$grey-color-dark:   darken($grey-color, 25%);
+
+$links-base-color:       {{ site.data.colors.links-base-color }};
+$links-interact-color:   {{ site.data.colors.links-interact-color }};
+
+$menu-primary-color:  {{ site.data.colors.menu-primary-color }};
+$menu-secondary-color: {{ site.data.colors.menu-secondary-color }};
+$menu-background-color: {{ site.data.colors.menu-background-color }};
+$menu-background-color-over:  {{ site.data.colors.menu-background-color-over }};
+
+$background-color:  {{ site.data.colors.background-color }};
+$section-a-background-color:    {{ site.data.colors.section-a-background }};
+$section-b-background-color:    {{ site.data.colors.section-b-background }};
+
+$footer-background-color:   {{ site.data.colors.footer-background-color }};
+$footer-text-color: {{ site.data.colors.footer-text-color }};
+
 
 // Width of the content area
-$content-width:    800px;
+$content-width:     800px;
 
-$on-palm:          600px;
-$on-laptop:        800px;
+$on-palm:           600px;
+$on-laptop:         800px;
 
 
 
@@ -46,8 +66,12 @@ $on-laptop:        800px;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
+        "bootstrap.min",
         "base",
-        "layout",
         "syntax-highlighting",
+        "nav",
+        "header",
+        "content",
+        "footer",
         "actu"
 ;

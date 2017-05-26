@@ -3,8 +3,10 @@ site-description: >
   Write an awesome description for your new site here. You can edit this
   line in _data/general-settings.yml. It will appear in your document head
   meta (for Google search results) and in your feed.xml site description.
+site-logo: /img/logo.png
 owner: The latin man
 email: your-email@domain.com
 twitter_username: jekyllrb
-github_username:  jekyll
+github_username: jekyll
+facebook_username: jekyll
 pagination-post-on-home-page: 3
