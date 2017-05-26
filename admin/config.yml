@@ -122,6 +122,7 @@ collections:
         fields:
           - {label: "Police de base", name: "primary-font", widget: "string"}
           - {label: "Police secondaire", name: "secondary-font", widget: "string"}
+          - {label: "Police du menu", name: "menu-font", widget: "string"}
       - name: "sitemenu"
         label: "Menu principal"
         file: "_data/sitemenu.yml"
