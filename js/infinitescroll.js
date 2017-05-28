@@ -1,6 +1,4 @@
 $(window).scroll(function() {
-    // get current scroll top in px, add window height and
-    // check if this is greater than the document height minus 300
     if ($(window).scrollTop() + $(window).height() >= $(document).height() - 300) {
         loadMoreContent();
     }

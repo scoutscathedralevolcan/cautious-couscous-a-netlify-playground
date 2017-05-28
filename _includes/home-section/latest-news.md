@@ -9,3 +9,5 @@
       </li>
     {% endfor %}
   </ul>
+
+<p class="rss-subscribe">Suivez nos dernière nouvelles <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>

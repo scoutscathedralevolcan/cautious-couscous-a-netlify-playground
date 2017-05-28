@@ -6,7 +6,7 @@
         padding-bottom: 5px;
     }
 
-@media(min-width:992px) {
+@media(min-width:$on-more-than-palm-width) {
     .navbar-logo {
         width:120px;
         height:125px;
@@ -86,7 +86,7 @@
     background-color: $menu-secondary-color;
 }
 
-@media(min-width:768px) {
+@media(min-width:$on-more-than-palm-width) {
     .navbar-default {
         padding: 25px 0;
         border: 0;

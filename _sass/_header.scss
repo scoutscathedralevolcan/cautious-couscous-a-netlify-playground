@@ -38,7 +38,7 @@ header .intro-text .intro-heading {
     line-height: 50px;
 }
 
-@media(min-width:768px) {
+@media(min-width:$on-more-than-palm-width) {
     header .intro-text {
         padding-top: 300px;
         padding-bottom: 200px;

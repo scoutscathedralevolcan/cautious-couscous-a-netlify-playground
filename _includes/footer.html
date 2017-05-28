@@ -4,14 +4,14 @@
         <div class="container">
     <div class="footer-col-wrapper">
       <div class="footer-col  footer-col-1">
-        <ul class="contact-list">
-          <li>{{ site.data.general-settings.site-title }}</li>
-          <li><a href="mailto:{{ site.data.general-settings.email }}">{{ site.data.general-settings.email }}</a></li>
-          <li><p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p></li>
-        </ul>
+        <img src="{{ site.data.general-settings.site-logo }}" class="footer-logo" alt="{{ site.data.general-settings.site-title }}"/>
       </div>
 
       <div class="footer-col  footer-col-2">
+        <ul class="contact-list">
+          <li>Copyright © 2017 - {{ site.data.general-settings.owner }}</li>
+          <li><a href="mailto:{{ site.data.general-settings.email }}">{{ site.data.general-settings.email }}</a></li>
+        </ul>
         <ul class="social-media-list">
           {% if site.data.general-settings.github_username %}
           <li>
