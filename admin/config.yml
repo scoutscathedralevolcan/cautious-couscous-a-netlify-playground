@@ -50,6 +50,22 @@ collections:
       - {label: "Header Image", name: "header-img", required: false, widget: "image"}
       - {label: "Contenu", name: "body", widget: "markdown"}
 
+  - name: "home-page"
+    label: "Configuration page accueil"
+    files:
+      - name: "home-page"
+        label: "Page d'accueil"
+        file: "index.md"
+        fields:
+          - {label: "Header Image", name: "header-img", required: false, widget: "image"}
+          - name: "kenburns-images:"
+            label: "Images galerie kenburns"
+            widget: "list"
+            required: false
+            fields:
+              - {label: "Image", name: "image_path", widget: "image"}
+          - {label: "Contenu", name: "body", widget: "hidden"}
+      
   - name: "home-section"
     label: "Sections de la page d'accueil"
     files:
@@ -91,8 +107,10 @@ collections:
           - {label: "Titre du site", name: "site-title", widget: "string"}
           - {label: "Logo", name: "site-logo", required: false, widget: "image"}
           - {label: "Description du site", name: "site-description", widget: "text"}
-          - {label: "Adresse courriel", name: "email", widget: "string"}
           - {label: "Propriétaire", name: "owner", widget: "string"}
+          - {label: "Adresse courriel", name: "email", widget: "string"}
+          - {label: "Adresse civique", name: "adress", widget: "string"}
+          - {label: "Numéro de téléphone", name: "phone", widget: "string"}
           - {label: "Nom d'utilisateur github", name: "github_username", widget: "string"}
           - {label: "Nom d'utilisateur Facebook", name: "facebook_username", widget: "string"}
           - {label: "Nom d'utilisateur Twitter", name: "twitter_username", widget: "string"}

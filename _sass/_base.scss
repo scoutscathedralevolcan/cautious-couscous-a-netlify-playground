@@ -189,3 +189,15 @@ pre {
         vertical-align: middle;
     }
 }
+
+
+.icon-spin:hover a:hover svg {
+    fill: $links-interact-color;
+	-moz-animation: spinHorizontal .5s linear;
+    -o-animation: spinHorizontal .5s linear;    
+    -webkit-animation: spinHorizontal .5s linear;
+    animation: spinHorizontal .5s linear; }
+@-webkit-keyframes spinHorizontal { 0% { transform: rotateY(0deg); } 100% { transform: rotateY(-360deg); } }
+@-mox-keyframes spinHorizontal { 0% { transform: rotateY(0deg); } 100% { transform: rotateY(-360deg); } }
+@-o-keyframes spinHorizontal { 0% { transform: rotateY(0deg); } 100% { transform: rotateY(-360deg); } }
+@keyframes spinHorizontal { 0% { transform: rotateY(0deg); } 100% { transform: rotateY(-360deg); } }

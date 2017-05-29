@@ -11,18 +11,43 @@
     {% else %}
     <div class="container">
     {% endif %}
+    {% if page.url == "/"%}
+    <div class="home-intro-text">
+	    <div class="home-intro-heading">{{ site.data.general-settings.site-title }}</div>
+	    <div class="home-intro-lead-in icon-spin">
+            {% if site.data.general-settings.phone %}
+              <a href="tel:{{site.data.general-settings.phone}}" style="target="_blank">
+              <span class="intro-lead-in-icon  icon--phone">
+                <svg viewBox="0 0 32 32">
+                  <path d="M22 20c-2 2-2 4-4 4s-4-2-6-4-4-4-4-6 2-2 4-4-4-8-6-8-6 6-6 6c0 4 4.109 12.109 8 16s12 8 16 8c0 0 6-4 6-6s-6-8-8-6z" ></path>
+                </svg>
+              </span> {{site.data.general-settings.phone}}</a><br>
+            {% endif %}
+            {% if site.data.general-settings.email %}
+                <a href="mailto:{{site.data.general-settings.email}}" style="target="_blank">
+                <span class="intro-lead-in-icon icon-spin icon--email">
+               <svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1792 654v978q0 66-47 113t-113 47h-1472q-66 0-113-47t-47-113v-978q0-15 11-24 8-7 39-34.5t41.5-36 45.5-37.5 70-55.5 96-73 143.5-107 192.5-140.5q5-4 52.5-40t71.5-52.5 64-35 69-18.5 69 18.5 65 35.5 71 52 52 40q110 80 192.5 140.5t143.5 107 96 73 70 55.5 45.5 37.5 41.5 36 39 34.5q11 9 11 24zm-564 585q263-191 345-252 11-8 12.5-20.5t-6.5-23.5l-38-52q-8-11-21-12.5t-24 6.5q-231 169-343 250-5 3-52 39t-71.5 52.5-64.5 35-69 18.5-69-18.5-64.5-35-71.5-52.5-52-39q-186-134-343-250-11-8-24-6.5t-21 12.5l-38 52q-8 11-6.5 23.5t12.5 20.5q82 61 345 252 10 8 50 38t65 47 64 39.5 77.5 33.5 75.5 11 75.5-11 79-34.5 64.5-39.5 65-47.5 48-36.5z"/></svg>
+                </span> {{site.data.general-settings.email}}</a><br>
+            {% endif %}
+            {% if site.data.general-settings.adress %}
+                {{site.data.general-settings.adress}}
+            {% endif %}
+	    </div>
+	</div>
+    {% else %}
 	<div class="intro-text">
 	    <div class="intro-heading">{{ page.title }}</div>
 	    {% if page.subtitle %}
 	    <div class="intro-lead-in">{{ page.subtitle }}</div>
 	    {% endif %}
 	</div>
+	{% endif %}
 
 	{% if page.kenburns-images %}
 	<canvas id="kenburns"></canvas>
 	{% for image in page.kenburns-images %}  	
 	<figure class="gallery-item">
-	  <header class='gallery-icon'>
+	  <header class="gallery-icon">
 	    <img src="{{ site.baseurl }}{{ image.image_path }}">
 	  </header>	
 	</figure>
