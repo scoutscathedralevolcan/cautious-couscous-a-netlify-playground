@@ -1,7 +1,9 @@
 ---
 layout: post
 title:  "Love, love, and love with latin"
+author: "The latin man"
 date:   2017-05-11 11:55:04
+header-img: /img/place-holder-1920x1200-1.jpg
 categories: actu
 ---
 

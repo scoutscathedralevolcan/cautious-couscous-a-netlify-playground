@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Holly latin"
+author: "The latin man"
 date:   2017-05-05 15:55:04
 categories: actu
 ---

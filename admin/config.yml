@@ -65,7 +65,7 @@ collections:
             fields:
               - {label: "Image", name: "image_path", widget: "image"}
           - {label: "Contenu", name: "body", widget: "hidden"}
-      
+
   - name: "home-section"
     label: "Sections de la page d'accueil"
     files:

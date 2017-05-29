@@ -1,7 +1,9 @@
 ---
 layout: post
 title:  "Writing more latin"
+author: "The latin man"
 date:   2017-05-17 14:37:28
+header-img: /img/place-holder-1920x1200-2.jpg
 categories: actu
 ---
 

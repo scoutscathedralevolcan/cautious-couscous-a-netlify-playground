@@ -49,7 +49,6 @@ sitemap:
 
 assets:
   compress:
-    css: true
     js: true
   prefix: "/js"
   assets:
@@ -57,5 +56,5 @@ assets:
   digest: true
   sources:
     - "_js"
-    
+
     

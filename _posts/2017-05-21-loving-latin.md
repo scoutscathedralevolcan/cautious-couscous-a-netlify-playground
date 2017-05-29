@@ -1,7 +1,9 @@
 ---
 layout: post
 title:  "Loving latin"
+author: "The latin man"
 date:   2017-05-21 23:57:19
+header-img: /img/place-holder-1920x1200-1.jpg
 categories: actu
 ---
 

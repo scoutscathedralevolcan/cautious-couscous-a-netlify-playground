@@ -1,7 +1,9 @@
 ---
 layout: post
 title:  "Being a latin lover"
+author: "The latin man"
 date:   2017-05-12 19:15:04
+header-img: /img/place-holder-1920x1200-3.jpg
 categories: actu
 ---
 
