@@ -30,9 +30,6 @@ function loadMoreContent() {
                     }
                 );
             }
-            if ( status != "error" ) {
-                    window.alert("Error while loading new content");
-            }
         });
 	paginationnav.load(url + " div.paginationnav");
     });
