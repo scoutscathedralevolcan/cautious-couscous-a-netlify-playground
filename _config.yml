@@ -4,6 +4,9 @@ url: "https://cautious-couscous.netlify.com/"
 # Build settings
 markdown: kramdown
 
+sass:
+  style: compressed
+
 defaults:
   -
     scope:
