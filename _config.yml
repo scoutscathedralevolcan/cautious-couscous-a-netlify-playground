@@ -35,6 +35,7 @@ exclude: ["Gemfile","Gemfile.lock","generate-photo-galleries.sh", "*.gallerie.co
 gems:
  - jekyll-sitemap
  - jekyll-paginate
+ - jekyll-assets
 
 # SiteMap
 sitemap:
@@ -45,3 +46,16 @@ sitemap:
         - "/writing/"
     change_frequency_name: "change_frequency"
     priority_name: "priority"
+
+assets:
+  compress:
+    css: true
+    js: true
+  prefix: "/js"
+  assets:
+    - "*.js"
+  digest: true
+  sources:
+    - "_js"
+    
+    

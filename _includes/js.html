@@ -1,32 +1,30 @@
-
 <!-- include jquery -->
-<script src="{{ site.url }}/js/jquery-1.11.2.min.js"></script> 
-
+{% js js/jquery-1.11.2.min %}
 <!-- Bootstrap Core JavaScript -->
-<script src="{{ "/js/bootstrap.min.js" | prepend: site.url }}"></script>
+{% js js/bootstrap.min  %}
 
 <!-- Plugin JavaScript -->
-<script src="{{ "/js/jquery.easing.min.js" | prepend: site.url }}"></script>
+{% js js/jquery.easing.min  %}
+{% js js/jquery.tinycarousel.min  %}
+{% js js/jquery.lazylinepainter.min  %}
+{% js js/jquery.mousewheel.min  %}
+{% js js/jquery.magnific-popup  %}
+{% js js/jquery.cycle.min  %}
 
 <!-- include Masonry -->
-<script src="{{ site.url }}/js/isotope.pkgd.min.js"></script> 
-<script src="{{ site.url }}/js/fit-columns.js"></script>
-<script src="{{ site.url }}/js/modernizr.js"></script>
-<!-- include infinitscroll plugins -->
-<script src="{{ site.url }}/js/infinitescroll.js"></script>
+{% js js/isotope.pkgd.min  %}
+{% js js/fit-columns  %}
+{% js js/modernizr  %}
+{% js js/infinitescroll  %}
 
-<script src="{{ site.url }}/js/classie.js"></script>
-<script src="{{ site.url }}/js/cbpAnimatedHeader.min.js"></script>
-<script src="{{ site.url }}/js/on-page-scroll.js"></script>
+<!-- include menu animation -->
+{% js js/classie  %}
+{% js js/cbpAnimatedHeader.min  %}
+{% js js/on-page-scroll  %}
 
-
-<!-- include gallery cycle plugin -->
-<script src="{{ site.baseurl }}/js/jquery.tinycarousel.min.js"></script>
-<script src="{{ site.baseurl }}/js/jquery.lazylinepainter.min.js"></script>
-<script src="{{ site.baseurl }}/js/jquery.mousewheel.min.js"></script>
-<script src="{{ site.baseurl }}/js/jquery.magnific-popup.js"></script>
-<script src="{{ site.baseurl }}/js/jquery.cycle.min.js"></script>
 <!-- include kenburns plugins -->
-<script src="{{ site.baseurl }}/js/kenburns.min.js"></script>
+{% js js/kenburns.min  %}
+
+
 <!-- include custom script -->
-<script src="{{ site.baseurl }}/js/kenburns-gallery.js"></script>
+{% js js/kenburns-gallery  %}
