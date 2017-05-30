@@ -26,11 +26,13 @@ collections:
     ressources:
         output: true
         permalink: /:collection/:name
+    units:
+        output: true
 
 paginate: 6
 paginate_path: "/actu/all/page:num"
 
-exclude: ["Gemfile","Gemfile.lock","generate-photo-galleries.sh", "*.gallerie.conf", ".*.conf"]
+exclude: ["Gemfile","Gemfile.lock","generate-photo-galleries.sh", "*.gallerie.conf", ".*.conf", "README.md"]
 
 gems:
  - jekyll-sitemap
@@ -42,8 +44,6 @@ sitemap:
     file: "/sitemap.xml"
     exclude:
         - "/feed.xml"
-    include_posts:
-        - "/writing/"
     change_frequency_name: "change_frequency"
     priority_name: "priority"
 

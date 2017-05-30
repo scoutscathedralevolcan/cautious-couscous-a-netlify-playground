@@ -158,4 +158,99 @@ collections:
               - {label: "Label", name: "label", widget: "string"}
               - {label: "Path", name: "path", widget: "string"}
 
+  - name: "units"
+    label: "Pages d'unités"
+    files:
+      - name: "castor"
+        label: "Castors"
+        file: "units/castors.md"
+        fields:
+          - {label: "Layout", name: "layout", widget: "hidden", default: "unit-page"}
+          - {label: "Title", name: "title", widget: "hidden", default: "Castors"}
+          - {label: "Lien permanent", name: "permalink", widget: "hidden", default: "/units/castors"}
+          - {label: "Page parrent", name: "parrent-page", widget: "hidden", default: "/units/"}
+          - {label: "Unité active (true / false)", name: "published", widget: "string", required: false}
+          - {label: "Contenu", name: "body", widget: "markdown"}
+      - name: "hirondelles"
+        label: "Hirondelles"
+        file: "units/hirondelles.md"
+        fields:
+          - {label: "Layout", name: "layout", widget: "hidden", default: "unit-page"}
+          - {label: "Title", name: "title", widget: "hidden", default: "Hirondelles"}
+          - {label: "Lien permanent", name: "permalink", widget: "hidden", default: "/units/hirondelles"}
+          - {label: "Page parrent", name: "parrent-page", widget: "hidden", default: "/units/"}
+          - {label: "Unité active (true / false)", name: "published", widget: "string", required: false}
+          - {label: "Contenu", name: "body", widget: "markdown"}
+      - name: "louveteaux"
+        label: "Louveteaux"
+        file: "units/louveteaux.md"
+        fields:
+          - {label: "Layout", name: "layout", widget: "hidden", default: "unit-page"}
+          - {label: "Title", name: "title", widget: "hidden", default: "Louveteaux"}
+          - {label: "Lien permanent", name: "permalink", widget: "hidden", default: "/units/louveteaux"}
+          - {label: "Page parrent", name: "parrent-page", widget: "hidden", default: "/units/"}
+          - {label: "Unité active (true / false)", name: "published", widget: "string", required: false}
+          - {label: "Contenu", name: "body", widget: "markdown"}
+      - name: "exploratrices"
+        label: "Exploratrices"
+        file: "units/exploratrices.md"
+        fields:
+          - {label: "Layout", name: "layout", widget: "hidden", default: "unit-page"}
+          - {label: "Title", name: "title", widget: "hidden", default: "Exploratrices"}
+          - {label: "Lien permanent", name: "permalink", widget: "hidden", default: "/units/exploratrices"}
+          - {label: "Page parrent", name: "parrent-page", widget: "hidden", default: "/units/"}
+          - {label: "Unité active (true / false)", name: "published", widget: "string", required: false}
+          - {label: "Contenu", name: "body", widget: "markdown"}
+      - name: "eclaireurs"
+        label: "Éclaireurs"
+        file: "units/eclaireurs.md"
+        fields:
+          - {label: "Layout", name: "layout", widget: "hidden", default: "unit-page"}
+          - {label: "Title", name: "title", widget: "hidden", default: "Éclaireurs"}
+          - {label: "Lien permanent", name: "permalink", widget: "hidden", default: "/units/eclaireurs"}
+          - {label: "Page parrent", name: "parrent-page", widget: "hidden", default: "/units/"}
+          - {label: "Unité active (true / false)", name: "published", widget: "string", required: false}
+          - {label: "Contenu", name: "body", widget: "markdown"}
+      - name: "intrepides"
+        label: "Intrépides"
+        file: "units/intrepides.md"
+        fields:
+          - {label: "Layout", name: "layout", widget: "hidden", default: "unit-page"}
+          - {label: "Title", name: "title", widget: "hidden", default: "Intrépides"}
+          - {label: "Lien permanent", name: "permalink", widget: "hidden", default: "/units/intrepides"}
+          - {label: "Page parrent", name: "parrent-page", widget: "hidden", default: "/units/"}
+          - {label: "Unité active (true / false)", name: "published", widget: "string", required: false}
+          - {label: "Contenu", name: "body", widget: "markdown"}
+      - name: "pionniers"
+        label: "Pionniers"
+        file: "units/pionniers.md"
+        fields:
+          - {label: "Layout", name: "layout", widget: "hidden", default: "unit-page"}
+          - {label: "Title", name: "title", widget: "hidden", default: "Pionniers"}
+          - {label: "Lien permanent", name: "permalink", widget: "hidden", default: "/units/pionniers"}
+          - {label: "Page parrent", name: "parrent-page", widget: "hidden", default: "/units/"}
+          - {label: "Unité active (true / false)", name: "published", widget: "string", required: false}
+          - {label: "Contenu", name: "body", widget: "markdown"}
+      - name: "routiers"
+        label: "Routiers"
+        file: "units/routiers.md"
+        fields:
+          - {label: "Layout", name: "layout", widget: "hidden", default: "unit-page"}
+          - {label: "Title", name: "title", widget: "hidden", default: "Routiers"}
+          - {label: "Lien permanent", name: "permalink", widget: "hidden", default: "/units/routiers"}
+          - {label: "Page parrent", name: "parrent-page", widget: "hidden", default: "/units/"}
+          - {label: "Unité active (true / false)", name: "published", widget: "string", required: false}
+          - {label: "Contenu", name: "body", widget: "markdown"}
 
+  - name: "units"
+    label: "Page d'unités"
+    folder: "_units"
+    create: false
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "unit-page"}
+      - {label: "Title", name: "title", widget: "hidden"}
+      - {label: "Lien permanent", name: "permalink", widget: "hidden"}
+      - {label: "Page parrent", name: "parrent-page", widget: "hidden", default: "/units/"}
+      - {label: "Insigne", name: "insigne", widget: "image"}
+      - {label: "Unité active (true / false)", name: "published", widget: "string", required: false}
+      - {label: "Contenu", name: "body", widget: "markdown"}

@@ -27,7 +27,7 @@
 		  {% endif %}
                     
             {% for nav_item in site.data.sitemenu.scrollnav %}
-			{% if nav_item.label != "hidden" %}
+			{% if nav_item.hidden-from-menu != "Oui" %}
 			  {% if page.url == "/" %}                
 			    <li>
 			      <a class="page-scroll" href="#{{ nav_item.path }}">{{ nav_item.label }}</a>
@@ -42,7 +42,7 @@
                     
             {% for nav_item  in site.data.sitemenu.pagesnav %}
             {% assign complete_nav_path = nav_item.path | append: "/" %}
-			{% if page.url == complete_nav_path %}
+			{% if page.url == complete_nav_path or complete_nav_path == page.parrent-page %}
 			  <li>
 			    <a class="page-scroll" href="#page-top">{{ nav_item.label }}</a>
 			  </li>

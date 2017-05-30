@@ -9,7 +9,11 @@
                     <i class="fa fa-plus fa-3x"></i>
                 </div>
             </div>
+            {% if post.header-img %}
             <img src="{{ post.header-img | prepend: site.baseurl }}" class="img-responsive img-centered" alt="">
+            {% else %}
+                <p>{{ post.content | truncatewords:30 | strip_html }}</p>
+            {% endif %}
         </a>
         <div class="portfolio-caption">
             <p class="text-muted">{{ post.subtitle }}</p>

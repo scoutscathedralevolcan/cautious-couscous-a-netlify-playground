@@ -30,6 +30,12 @@ section h2.section-heading {
     font-size: 40px;
 }
 
+homesection h2.section-heading {
+    margin-top: 0;
+    margin-bottom: 50px;
+    font-size: 40px;
+}
+
 @media(min-width:$on-more-than-palm-width) {
     section {
         padding: 150px 0;
