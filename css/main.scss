@@ -37,6 +37,8 @@ $background-color:  {{ site.data.colors.background-color }};
 $section-a-background-color:    {{ site.data.colors.section-a-background }};
 $section-b-background-color:    {{ site.data.colors.section-b-background }};
 
+$latest-actu-background-color: $background-color;
+
 $footer-background-color:   {{ site.data.colors.footer-background-color }};
 $footer-text-color: {{ site.data.colors.footer-text-color }};
 
@@ -72,5 +74,6 @@ $on-more-than-palm-width: 769px;
         "content",
         "footer",
         "actu",
-        "galeries"
+        "galeries",
+        "latest-actu"
 ;
