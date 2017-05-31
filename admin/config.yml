@@ -87,7 +87,7 @@ collections:
         file: "index.md"
         fields:
           - {label: "Header Image", name: "header-img", required: false, widget: "image"}
-          - name: "kenburns-images:"
+          - name: "kenburns-images"
             label: "Images galerie kenburns"
             widget: "list"
             required: false
