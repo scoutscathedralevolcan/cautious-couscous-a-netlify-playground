@@ -74,10 +74,10 @@ collections:
     fields:
       - {label: "Titre de section", name: "title", widget: "string"}
       - {label: "slug - (nom sans espaces, accent, carractères spéciaux ou avec accents)", name: "slug", widget: "string"}
-      - {label: "Contenu", name: "body", widget: "markdown"}
       - {label: "Poids - pour l'ordre d'apparition des sections, un poid plus grand fait que la page arrive plus tard", name: "weight", widget: "number"}
       - {label: "Afficher la section - (est-ce que la section doit-être affichée?)", name: "show", widget: "boolean"}
       - {label: "Afficher la section dans le menu- (est-ce que la section doit-être affichée dans le menu?)", name: "show-in-menu", widget: "boolean"}
+      - {label: "Contenu", name: "body", widget: "markdown"}
 
   - name: "home-page"
     label: "Configuration page accueil"
