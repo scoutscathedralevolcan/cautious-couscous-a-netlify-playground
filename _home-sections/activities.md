@@ -1,5 +1,5 @@
 ---
-title: "Calendrier des activités"
+section-title: "Calendrier des activités"
 id: activities
 weight: 4
 show: true

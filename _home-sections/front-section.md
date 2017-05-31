@@ -1,6 +1,5 @@
 ---
-title: "Front info"
-slug: "front-section"
+id: "front-section"
 weight: 1
 show: true
 show-in-menu: false

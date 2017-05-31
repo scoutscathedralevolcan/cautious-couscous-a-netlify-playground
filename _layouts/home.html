@@ -12,12 +12,12 @@ layout: default
         {% else %}
             {% assign sectionbgcolor = "section-a-background" %}
         {% endif %}
-    <homesection id="{{ home-section.slug }}" class="{{sectionbgcolor}}">
+    <homesection id="{{ home-section.id }}" class="{{sectionbgcolor}}">
         <div class="container">
-        {% if home-section.title %}
+        {% if home-section.section-title %}
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">{{ home-section.title }}</h2>
+                    <h2 class="section-heading">{{ home-section.section-title }}</h2>
                 </div>
             </div>
         {% endif %}

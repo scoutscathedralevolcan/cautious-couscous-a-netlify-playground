@@ -1,5 +1,5 @@
 ---
-title: "À propos"
+section-title: "À propos"
 id: about
 weight: 2
 show: true

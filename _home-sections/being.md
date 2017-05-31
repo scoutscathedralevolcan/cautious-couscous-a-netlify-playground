@@ -1,5 +1,5 @@
 ---
-title: "Être"
+section-title: "Être"
 id: being
 weight: 5
 show: true

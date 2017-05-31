@@ -1,6 +1,6 @@
 ---
-title: "Nous joindre"
-slug: "contact-us"
+section-title: "Nous joindre"
+id: "contact-us"
 weight: 7
 show: true
 show-in-menu: true

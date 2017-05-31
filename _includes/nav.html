@@ -32,11 +32,11 @@
                 {% if nav_item.show-in-menu != false %}
                     {% if page.url == "/" %}                
                         <li>
-                        <a class="page-scroll" href="#{{ nav_item.slug }}">{{ nav_item.title }}</a>
+                        <a class="page-scroll" href="#{{ nav_item.id }}">{{ nav_item.section-title }}</a>
                         </li>
                     {% else %}
                         <li>
-                        <a class="page-scroll" href="/{{ site.baseurl }}#{{ nav_item.slug }}">{{ nav_item.title }}</a>
+                        <a class="page-scroll" href="/{{ site.baseurl }}#{{ nav_item.id }}">{{ nav_item.section-title }}</a>
                         </li>
                     {% endif %}
                 {% endif %}
