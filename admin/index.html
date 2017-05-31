@@ -23,7 +23,7 @@
 
             render: function() {
                 var value = this.props.value;
-                return h('input', { type: 'checkbox', value: value ? value.checked, onChange: this.handleChange });
+                return h('input', { type: 'checkbox', checked: value, onChange: this.handleChange });
             }
         });
 
