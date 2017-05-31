@@ -1,3 +1,10 @@
+---
+title: "À propos"
+id: about
+weight: 2
+show: true
+show-in-menu: true
+---
 Latin never faill to express what we're about to say.
 
 Vivamus blandit fringilla ante, at accumsan nunc lobortis eu. Vestibulum vitae malesuada orci. Etiam consectetur libero vel sodales varius. Aenean rutrum elit velit, sed pharetra magna auctor facilisis. Aliquam egestas, tortor a dictum pretium, arcu erat bibendum elit, eu mollis erat eros id velit. Sed commodo, est sit amet fringilla sagittis, odio odio sodales diam, vitae molestie nisl lacus sit amet erat. Maecenas sollicitudin nibh mollis faucibus euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet neque congue, rutrum dui et, ultrices elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In hac habitasse platea dictumst. Nunc venenatis eros sed urna tempus feugiat. Donec ultricies, nisi a commodo viverra, arcu nulla lacinia est, convallis finibus metus est sed purus. Proin tempus sodales sapien, non finibus ex sagittis a.

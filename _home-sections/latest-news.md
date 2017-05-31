@@ -1,3 +1,11 @@
+---
+title: "Nouvelles"
+slug: "latest-news"
+weight: 6
+show: true
+show-in-menu: true
+---
+
 <div class="row">
 {% for post in site.posts limit: site.data.general-settings.pagination-post-on-home-page %}
     <div class="col-md-4 col-sm-6 portfolio-item">

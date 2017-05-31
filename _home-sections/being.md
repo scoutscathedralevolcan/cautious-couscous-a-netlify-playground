@@ -1,3 +1,10 @@
+---
+title: "Être"
+id: being
+weight: 5
+show: true
+show-in-menu: false
+---
 Being... well, if it's not latin does it wroth being?
 
 Definitively not... so stick to latin!

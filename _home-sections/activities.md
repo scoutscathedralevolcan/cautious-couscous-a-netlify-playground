@@ -1,3 +1,10 @@
+---
+title: "Calendrier des activités"
+id: activities
+weight: 4
+show: true
+show-in-menu: true
+---
 Activities... or a calandar of activities...
 
 Well... we prefer latin text forever!

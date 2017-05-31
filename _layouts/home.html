@@ -1,33 +1,32 @@
 ---
 layout: default
 ---
-    {% for navscroll_item in site.data.sitemenu.scrollnav %}
-        {% if navscroll_item.label != "hidden" %}
-        <!-- {{ navscroll_item.label }} Section -->
+{% assign sorted-home-sections = site.home-sections | sort:"weight"  %}
+{% for home-section in sorted-home-sections %}
+    {% if home-section.show != false %}
+        {% if home-section.title %}
+        <!-- {{ navscroll_item.title }} Section -->
         {% endif %}
         {% if sectionbgcolor == "section-a-background" %}
             {% assign sectionbgcolor = "section-b-background" %}
         {% else %}
             {% assign sectionbgcolor = "section-a-background" %}
         {% endif %}
-    <homesection id="{{ navscroll_item.path }}" class="{{sectionbgcolor}}">
+    <homesection id="{{ home-section.slug }}" class="{{sectionbgcolor}}">
         <div class="container">
-        {% if navscroll_item.label %}
+        {% if home-section.title %}
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">{{ navscroll_item.label }}</h2>
+                    <h2 class="section-heading">{{ home-section.title }}</h2>
                 </div>
             </div>
         {% endif %}
             <div class="row">
                 <div class="col-lg-12 text-justify">
-            {% capture includescrollelement %}home-section/{{ navscroll_item.path }}.md{% endcapture %}
-            {% capture pagecaptured %}{% include {{ includescrollelement }} %} {% endcapture %}
-            {{ pagecaptured | markdownify }}
+                    {{ home-section.content }}
                 </div>
             </div>
         </div>
     </homesection>
-    {% endfor %}
-    
-    {{ content }}
+    {% endif %}
+{% endfor %}

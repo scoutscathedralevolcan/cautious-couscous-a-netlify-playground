@@ -1,3 +1,10 @@
+---
+title: "Nous joindre"
+slug: "contact-us"
+weight: 7
+show: true
+show-in-menu: true
+---
 Yeah, now you want to contact us...
 
 Well, eventually we gonna be reachable. For now, wait...

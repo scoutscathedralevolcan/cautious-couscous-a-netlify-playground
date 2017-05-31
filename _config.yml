@@ -28,6 +28,8 @@ collections:
         permalink: /:collection/:name
     units:
         output: true
+    home-sections:
+        output: true
 
 paginate: 6
 paginate_path: "/actu/all/page:num"

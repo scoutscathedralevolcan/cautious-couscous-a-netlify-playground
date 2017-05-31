@@ -1,3 +1,11 @@
+---
+title: "Front info"
+slug: "front-section"
+weight: 1
+show: true
+show-in-menu: false
+---
+
 Suspendisse non neque sollicitudin felis tristique hendrerit. Donec at rutrum enim, condimentum finibus lacus. Mauris vel nibh sit amet nulla dignissim interdum. Quisque sed dolor quis ex mollis porttitor sit amet nec purus. Praesent iaculis eros elit, eu suscipit lectus scelerisque ac. Donec quis convallis purus. Vestibulum suscipit, arcu nec varius accumsan, tortor metus sagittis nulla, vulputate egestas urna orci in nisi. Sed blandit, lacus quis dapibus euismod, est mauris aliquam velit, ut feugiat nisi neque in metus. Morbi fermentum sem eget lacus eleifend placerat. Curabitur congue ultricies quam ac pharetra. Phasellus suscipit quam eget velit lobortis, quis fringilla ex viverra. Aliquam erat volutpat.
 
 Vestibulum id purus vitae risus lacinia bibendum vel id sem. In eget leo ultricies, euismod tortor nec, feugiat ex. Donec sed efficitur sem. Aenean tincidunt sem id sapien tincidunt vestibulum. Integer consectetur est nec lobortis viverra. Donec ac suscipit risus. Duis nec sollicitudin justo.

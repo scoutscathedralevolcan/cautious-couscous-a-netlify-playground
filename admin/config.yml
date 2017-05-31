@@ -68,32 +68,16 @@ collections:
 
   - name: "home-section"
     label: "Sections de la page d'accueil"
-    files:
-      - name: "about"
-        label: "À propos"
-        file: "_includes/home-section/about.md"
-        fields:
-          - {label: "Contenu", name: "body", widget: "markdown"}
-      - name: "front-message"
-        label: "Information mise à l'avant"
-        file: "_includes/home-section/front-section.md"
-        fields:
-          - {label: "Contenu", name: "body", widget: "markdown"}
-      - name: "activites"
-        label: "Calendrier des activités"
-        file: "_includes/home-section/activities.md"
-        fields:
-          - {label: "Contenu", name: "body", widget: "markdown"}
-      - name: "being"
-        label: "Être"
-        file: "_includes/home-section/being.md"
-        fields:
-          - {label: "Contenu", name: "body", widget: "markdown"}
-      - name: "contact-us"
-        label: "Nous joindre"
-        file: "_includes/home-section/contact-us.md"
-        fields:
-          - {label: "Contenu", name: "body", widget: "markdown"}
+    folder: "_home-sections"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Titre de section", name: "title", widget: "string"}
+      - {label: "slug - (nom sans espaces, accent, carractères spéciaux ou avec accents)", name: "slug", widget: "string"}
+      - {label: "Contenu", name: "body", widget: "markdown"}
+      - {label: "Poids - pour l'ordre d'apparition des sections, un poid plus grand fait que la page arrive plus tard", name: "weight", widget: "number"}
+      - {label: "Afficher la section - (est-ce que la section doit-être affichée?)", name: "show", widget: "boolean"}
+      - {label: "Afficher la section dans le menu- (est-ce que la section doit-être affichée dans le menu?)", name: "show-in-menu", widget: "boolean"}
 
   - name: "home-page"
     label: "Configuration page accueil"

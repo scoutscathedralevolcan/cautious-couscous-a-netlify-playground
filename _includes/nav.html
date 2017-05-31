@@ -25,19 +25,22 @@
 		      <a class="page-scroll" href="/{{ site.baseurl }}">Accueil</a>
                     </li>
 		  {% endif %}
-                    
-            {% for nav_item in site.data.sitemenu.scrollnav %}
-			{% if nav_item.hidden-from-menu != "Oui" %}
-			  {% if page.url == "/" %}                
-			    <li>
-			      <a class="page-scroll" href="#{{ nav_item.path }}">{{ nav_item.label }}</a>
-			    </li>
-			  {% else %}
-			    <li>
-			      <a class="page-scroll" href="/{{ site.baseurl }}#{{ nav_item.path }}">{{ nav_item.label }}</a>
-			    </li>
-			  {% endif %}
-			{% endif %}
+		  
+		  {% assign sorted-home-sections = site.home-sections | sort:"weight"  %}
+            {% for nav_item in sorted-home-sections %}
+            {% if nav_item.show != false %}
+                {% if nav_item.show-in-menu != false %}
+                    {% if page.url == "/" %}                
+                        <li>
+                        <a class="page-scroll" href="#{{ nav_item.slug }}">{{ nav_item.title }}</a>
+                        </li>
+                    {% else %}
+                        <li>
+                        <a class="page-scroll" href="/{{ site.baseurl }}#{{ nav_item.slug }}">{{ nav_item.title }}</a>
+                        </li>
+                    {% endif %}
+                {% endif %}
+            {% endif %}
             {% endfor %}
                     
             {% for nav_item  in site.data.sitemenu.pagesnav %}
