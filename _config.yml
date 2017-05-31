@@ -29,6 +29,8 @@ collections:
     units:
         output: true
     home-sections:
+        output: false
+    galerie-photo:
         output: true
 
 paginate: 6

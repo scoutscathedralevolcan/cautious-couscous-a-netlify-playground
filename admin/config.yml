@@ -78,6 +78,26 @@ collections:
       - {label: "Afficher la section - (est-ce que la section doit-être affichée?)", name: "show", widget: "boolean"}
       - {label: "Afficher la section dans le menu- (est-ce que la section doit-être affichée dans le menu?)", name: "show-in-menu", widget: "boolean"}
       - {label: "Contenu", name: "body", widget: "markdown"}
+      
+  - name: "galerie"
+    label: "Galerie"
+    folder: "_galerie-photo"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "galerie-photo"}
+      - {label: "Titre", name: "title", widget: "string"}
+      - {label: "Date de publication", name: "date", widget: "datetime", format: "YYYY-MM-DD hh:mm:ss"}
+      - {label: "Afficher la galerie - (est-ce que la section doit-être affichée?)", name: "published", widget: "boolean", default: true}
+      - name: "kenburns-images"
+        label: "Images galerie kenburns"
+        widget: "list"
+        required: true
+        fields:
+          - {label: "Image", name: "image_path", widget: "image"}
+          - {label: "Légende", name: "capiton", widget: "string", required: false}
+          - {label: "Auteur", name: "author", widget: "string", required: false}
+          - {label: "Copyright", name: "copyright", widget: "string", required: false}
 
   - name: "home-page"
     label: "Configuration page accueil"
