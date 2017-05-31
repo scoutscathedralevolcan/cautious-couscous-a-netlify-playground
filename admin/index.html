@@ -16,11 +16,8 @@
         CMS.registerPreviewStyle("/css/main.css");
     </script>
     <script>
-        import React, { PropTypes } from 'react';
-        import ImmutablePropTypes from "react-immutable-proptypes";
         import Switch from 'react-toolbox/lib/switch';
-
-        BooleanControl extends React.Component {
+        var BooleanControl = createClass({
             render() {
                 const { value, field, forId, onChange } = this.props;
                 return (
@@ -31,11 +28,9 @@
                 />
                 );
             }
-        }
-        
-        var BooleanController = BooleanControl();
+        });
 
-        CMS.registerWidget('boolean', BooleanController);
+        CMS.registerWidget('boolean', BooleanControl);
     </script>
 </body>
 </html>
