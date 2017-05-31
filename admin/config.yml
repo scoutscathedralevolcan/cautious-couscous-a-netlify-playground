@@ -60,6 +60,7 @@ collections:
       - {label: "Lien permanent", name: "permalink", widget: "hidden"}
       - {label: "Page parrent", name: "parrent-page", widget: "hidden", default: "/units/"}
       - {label: "Insigne", name: "insigne", widget: "image"}
+      - {label: "Header Image", name: "header-img", required: false, widget: "image"}
       - {label: "Unité active", name: "published", widget: "boolean"}
       - {label: "Sexe et Age", name: "short", widget: "string"}
       - {label: "Description de l'unité", name: "description", widget: "text"}
