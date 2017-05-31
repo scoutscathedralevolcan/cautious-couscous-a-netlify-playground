@@ -3,7 +3,7 @@ backend:
   repo: scoutscathedralevolcan/cautious-couscous-a-netlify-playground
   branch: master
 
-media_folder: "img"
+media_folder: "img/uploads"
 publish_mode: editorial_workflow
 
 collections:
@@ -50,21 +50,20 @@ collections:
       - {label: "Header Image", name: "header-img", required: false, widget: "image"}
       - {label: "Contenu", name: "body", widget: "markdown"}
 
-  - name: "home-page"
-    label: "Configuration page accueil"
-    files:
-      - name: "home-page"
-        label: "Page d'accueil"
-        file: "index.md"
-        fields:
-          - {label: "Header Image", name: "header-img", required: false, widget: "image"}
-          - name: "kenburns-images:"
-            label: "Images galerie kenburns"
-            widget: "list"
-            required: false
-            fields:
-              - {label: "Image", name: "image_path", widget: "image"}
-          - {label: "Contenu", name: "body", widget: "hidden"}
+  - name: "units"
+    label: "Page d'unités"
+    folder: "_units"
+    create: false
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "unit-page"}
+      - {label: "Title", name: "title", widget: "hidden"}
+      - {label: "Lien permanent", name: "permalink", widget: "hidden"}
+      - {label: "Page parrent", name: "parrent-page", widget: "hidden", default: "/units/"}
+      - {label: "Insigne", name: "insigne", widget: "image"}
+      - {label: "Unité active", name: "published", widget: "boolean"}
+      - {label: "Sexe et Age", name: "short", widget: "string"}
+      - {label: "Description de l'unité", name: "description", widget: "text"}
+      - {label: "Contenu", name: "body", widget: "markdown"}
 
   - name: "home-section"
     label: "Sections de la page d'accueil"
@@ -94,6 +93,22 @@ collections:
         file: "_includes/home-section/contact-us.md"
         fields:
           - {label: "Contenu", name: "body", widget: "markdown"}
+
+  - name: "home-page"
+    label: "Configuration page accueil"
+    files:
+      - name: "home-page"
+        label: "Page d'accueil"
+        file: "index.md"
+        fields:
+          - {label: "Header Image", name: "header-img", required: false, widget: "image"}
+          - name: "kenburns-images:"
+            label: "Images galerie kenburns"
+            widget: "list"
+            required: false
+            fields:
+              - {label: "Image", name: "image_path", widget: "image"}
+          - {label: "Contenu", name: "body", widget: "hidden"}
 
   - name: "settings"
     label: "Options du site"
@@ -157,16 +172,3 @@ collections:
             fields:
               - {label: "Label", name: "label", widget: "string"}
               - {label: "Path", name: "path", widget: "string"}
-
-  - name: "units"
-    label: "Page d'unités"
-    folder: "_units"
-    create: false
-    fields:
-      - {label: "Layout", name: "layout", widget: "hidden", default: "unit-page"}
-      - {label: "Title", name: "title", widget: "hidden"}
-      - {label: "Lien permanent", name: "permalink", widget: "hidden"}
-      - {label: "Page parrent", name: "parrent-page", widget: "hidden", default: "/units/"}
-      - {label: "Insigne", name: "insigne", widget: "image"}
-      - {label: "Unité active (true / false)", name: "published", widget: "boolean"}
-      - {label: "Contenu", name: "body", widget: "markdown"}
