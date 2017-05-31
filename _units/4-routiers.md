@@ -6,6 +6,7 @@ parrent-page: /units/
 insigne: "/img/b-rs.png"
 description: "Les routiers font suite au pionniers, c'est aussi l'unité la plus vieille dans le parcours jeune"
 short: "mixte 17-25"
+published: true
 ---
  
 Sed sollicitudin aliquam scelerisque. Quisque hendrerit mattis urna, et suscipit turpis. Donec sed posuere metus. Suspendisse ultricies euismod diam ac scelerisque. Quisque id mi lorem. Nam ac fermentum neque. Donec ac est a justo feugiat volutpat quis sed arcu. Quisque tincidunt mauris id tortor condimentum, et rutrum dui dignissim. Nullam nec massa vitae eros porttitor accumsan. Vestibulum pharetra diam ut odio molestie, sed dignissim libero rhoncus. Aenean eget elementum urna. Nunc placerat diam non nibh dictum rutrum.

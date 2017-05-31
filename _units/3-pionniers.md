@@ -6,6 +6,7 @@ parrent-page: /units/
 insigne: "/img/b-pi.png"
 description: "Les pionniers font suite au éclaireurs"
 short: "mixte 14-18"
+published: true
 ---
  
 Sed interdum maximus sapien at aliquet. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam semper urna ac diam malesuada tempor. Maecenas congue pretium vulputate. Duis sit amet consequat purus. Cras rutrum, sem vitae euismod viverra, neque neque tincidunt nisl, vitae euismod lacus mi ornare dolor. Curabitur viverra accumsan tincidunt. Integer eget est ipsum. Ut sollicitudin vitae nulla ut sagittis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce faucibus porta ligula, eget accumsan felis accumsan vel.

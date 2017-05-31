@@ -6,6 +6,7 @@ parrent-page: /units/
 insigne: "/img/b-ca.png"
 description: "Les castors l'unité la plus jeune"
 short: mixte 7-8
+published: true
 ---
 
 

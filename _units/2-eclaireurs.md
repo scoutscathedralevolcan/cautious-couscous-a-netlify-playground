@@ -6,6 +6,7 @@ parrent-page: /units/
 insigne: "/img/b-ec.png"
 description: "Les éclaireurs font suite aux louveteaux et exploratrices"
 short: "mixte 12-15"
+published: true
 ---
 
 Duis at porttitor tortor, at iaculis mi. Nullam risus odio, pulvinar eu felis non, lobortis lacinia urna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Proin malesuada vestibulum aliquam. Nullam sit amet tempor odio. Maecenas neque neque, tempus nec turpis vel, porta volutpat nisi. Morbi maximus euismod sem. Quisque sed ex sit amet massa cursus blandit. Morbi pulvinar ultrices lectus, vel efficitur nunc luctus vitae. Nulla facilisi. Sed nunc orci, imperdiet et vehicula a, faucibus eget urna. Quisque congue eleifend odio, congue rhoncus elit ullamcorper eget. Proin blandit luctus ullamcorper. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean sed feugiat dolor. Donec sit amet varius eros.

@@ -6,6 +6,7 @@ parrent-page: /units/
 insigne: "/img/b-lo.png"
 description: "Les louveteaux font suite au castors chez les garçons"
 short: "garçons 9-12"
+published: true
 ---
  
 Integer lorem velit, fermentum at sagittis sed, suscipit ac mi. Nulla tincidunt dignissim lorem ac rutrum. Sed faucibus metus velit, sit amet maximus massa tincidunt at. Fusce et erat semper, pulvinar mauris sit amet, eleifend sapien. Fusce ornare eros vel facilisis tristique. Aenean vestibulum elit vestibulum ligula volutpat, in rhoncus ligula molestie. Nunc laoreet, purus nec molestie mollis, mauris metus facilisis tellus, nec dictum dolor ligula ut metus. Cras euismod nibh non sapien interdum, egestas rhoncus ipsum pulvinar. Pellentesque tempor eget ex vel aliquet. Nunc elit neque, ullamcorper non varius et, semper ac neque. Aenean sed ex mauris. Donec tristique suscipit luctus. Vestibulum eget maximus eros. Curabitur non dolor scelerisque, maximus ipsum scelerisque, rutrum ipsum.

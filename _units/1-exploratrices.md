@@ -6,6 +6,7 @@ parrent-page: /units/
 insigne: "/img/b-ex.png"
 description: "Les louveteaux font suite au castors chez les filles"
 short: "filles 9-12"
+published: true
 ---
  
 Ut a tempor orci. Mauris vitae finibus ex. Ut felis orci, ornare non lorem sit amet, imperdiet feugiat elit. Sed convallis, magna at eleifend venenatis, nisl nisi lobortis mauris, sit amet dictum nisl eros ut felis. Duis in odio eu ligula convallis auctor. In condimentum tincidunt lorem eget feugiat. Fusce convallis libero a hendrerit blandit. Curabitur egestas nisl felis, et bibendum risus consequat et. Ut rutrum, magna id ultricies iaculis, elit urna vestibulum leo, in fringilla mauris sem eget turpis. Etiam pretium lectus turpis, sed tincidunt nulla porttitor vitae. Integer eget auctor massa.
