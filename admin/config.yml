@@ -168,5 +168,5 @@ collections:
       - {label: "Lien permanent", name: "permalink", widget: "hidden"}
       - {label: "Page parrent", name: "parrent-page", widget: "hidden", default: "/units/"}
       - {label: "Insigne", name: "insigne", widget: "image"}
-      - {label: "Unité active (true / false)", name: "published", widget: "string"}
+      - {label: "Unité active (true / false)", name: "published", widget: "boolean"}
       - {label: "Contenu", name: "body", widget: "markdown"}
