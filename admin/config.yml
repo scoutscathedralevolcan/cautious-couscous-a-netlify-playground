@@ -56,7 +56,7 @@ collections:
     create: false
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "unit-page"}
-      - {label: "Title", name: "title", widget: "hidden"}
+      - {label: "Title", name: "title", widget: "string"}
       - {label: "Lien permanent", name: "permalink", widget: "hidden"}
       - {label: "Page parrent", name: "parrent-page", widget: "hidden", default: "/units/"}
       - {label: "Insigne", name: "insigne", widget: "image"}
