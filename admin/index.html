@@ -15,5 +15,19 @@
     <script>
         CMS.registerPreviewStyle("/css/main.css");
     </script>
+    <script>
+        var BooleanControl = createClass({
+            handleChange: function(e) {
+                this.props.onChange(e.target.is(":checked")));
+            },
+
+            render: function() {
+                var value = this.props.value;
+                return h('input', { type: 'checkbox', value: value ? value.checked, onChange: this.handleChange });
+            }
+        });
+
+        CMS.registerWidget('boolean', BooleanControl);
+    </script>
 </body>
 </html>
