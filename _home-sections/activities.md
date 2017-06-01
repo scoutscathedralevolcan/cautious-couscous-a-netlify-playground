@@ -1,6 +1,6 @@
 ---
 section-title: "Calendrier des activités"
-id: activities
+section-id: activities
 weight: 4
 show: true
 show-in-menu: true

@@ -1,6 +1,6 @@
 ---
 section-title: "Nouvelles"
-id: "latest-news"
+section-id: "latest-news"
 weight: 6
 show: true
 show-in-menu: true

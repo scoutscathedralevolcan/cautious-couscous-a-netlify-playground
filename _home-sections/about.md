@@ -1,6 +1,6 @@
 ---
 section-title: "À propos"
-id: about
+section-id: about
 weight: 2
 show: true
 show-in-menu: true

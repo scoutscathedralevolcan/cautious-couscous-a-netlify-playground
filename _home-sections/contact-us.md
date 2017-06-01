@@ -1,6 +1,6 @@
 ---
 section-title: "Nous joindre"
-id: "contact-us"
+section-id: "contact-us"
 weight: 7
 show: true
 show-in-menu: true

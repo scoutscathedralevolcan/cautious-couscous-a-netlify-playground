@@ -73,7 +73,7 @@ collections:
     slug: "{{slug}}"
     fields:
       - {label: "Titre de section", name: "section-title", widget: "string", required: false}
-      - {label: "ID - nom unique sans espaces, accent, carractères spéciaux ou avec accents", name: "id", widget: "string"}
+      - {label: "Section-ID - nom unique sans espaces, accent, carractères spéciaux ou avec accents", name: "section-id", widget: "string"}
       - {label: "Poids - ordre d'apparition des sections", name: "weight", widget: "number"}
       - {label: "Afficher la section - (est-ce que la section doit-être affichée?)", name: "show", widget: "boolean"}
       - {label: "Afficher la section dans le menu- (est-ce que la section doit-être affichée dans le menu?)", name: "show-in-menu", widget: "boolean"}

@@ -1,6 +1,6 @@
 ---
 section-title: "Nos unités"
-id: "units"
+section-id: "units"
 weight: 3
 show: true
 show-in-menu: true

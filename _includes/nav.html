@@ -30,13 +30,13 @@
             {% for nav_item in sorted-home-sections %}
             {% if nav_item.show != false %}
                 {% if nav_item.show-in-menu != false %}
-                    {% if page.url == "/" %}                
+                    {% if page.url == "/" %}
                         <li>
-                        <a class="page-scroll" href="#{{ nav_item.id }}">{{ nav_item.section-title }}</a>
+                        <a class="page-scroll" href="#{{ nav_item.section-id }}">{{ nav_item.section-title }}</a>
                         </li>
                     {% else %}
                         <li>
-                        <a class="page-scroll" href="/{{ site.baseurl }}#{{ nav_item.id }}">{{ nav_item.section-title }}</a>
+                        <a class="page-scroll" href="/{{ site.baseurl }}#{{ nav_item.section-id }}">{{ nav_item.section-title }}</a>
                         </li>
                     {% endif %}
                 {% endif %}
