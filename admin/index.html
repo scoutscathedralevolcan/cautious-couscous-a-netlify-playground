@@ -13,7 +13,7 @@
 <body>
     <script src="https://unpkg.com/netlify-cms@^0.3/dist/cms.js"></script>
     <script>
-        CMS.registerPreviewStyle("/css/main.css");
+        window.CMS.registerPreviewStyle("/css/main.css");
     </script>
     <script>
         var BooleanControl = createClass({
@@ -27,7 +27,7 @@
             }
         });
 
-        CMS.registerWidget('boolean', BooleanControl);
+        window.CMS.registerWidget('boolean', BooleanControl);
     </script>
 </body>
 </html>
