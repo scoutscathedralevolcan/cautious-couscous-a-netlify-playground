@@ -56,7 +56,8 @@
     background-color: $menu-primary-color;
 }
 
-.navbar-default .nav li a {
+.navbar-default .nav li a,
+.navbar-default .nav li a:focus {
     text-transform: uppercase;
     font-family: $menu-font-family;
     font-weight: 400;
@@ -67,21 +68,20 @@
     transition: all ease .35s;
 }
 
-.navbar-default .nav li a:hover,
-.navbar-default .nav li a:focus {
+.navbar-default .nav li a:hover {
     outline: 0;
     color: $menu-primary-color;
     background-color: $menu-secondary-color;
 }
 
-.navbar-default .navbar-nav>.active>a {
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus {
     border-radius: 0;
     color: $menu-secondary-color;
     background-color: $menu-primary-color;
 }
 
-.navbar-default .navbar-nav>.active>a:hover,
-.navbar-default .navbar-nav>.active>a:focus {
+.navbar-default .navbar-nav>.active>a:hover {
     color: $menu-primary-color;
     background-color: $menu-secondary-color;
 }
