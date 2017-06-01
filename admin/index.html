@@ -14,11 +14,14 @@
     <script src="https://unpkg.com/netlify-cms@^0.3/dist/cms.js"></script>
     <script>
         var BooleanControl = createClass({
-            render() {
-                const { value, field, forId, onChange } = this.props;
-                return (
-                "<Switch id={forId} checked={value === undefined ? field.get('defaultValue', false) : value} onChange={onChange} />"
-                );
+            handleChange: function(e) {
+                this.props.onChange($(e.target).prop("checked"));
+                this.props.value = $(e.target).prop("checked");
+            },
+
+            render: function() {
+                var value = this.props.value;
+                return h('input', { type: 'checkbox', checked: value, onChange: this.handleChange });
             }
         });
 
