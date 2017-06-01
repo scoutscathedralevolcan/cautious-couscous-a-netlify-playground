@@ -13,12 +13,9 @@
 <body>
     <script src="https://unpkg.com/netlify-cms@^0.3/dist/cms.js"></script>
     <script>
-        window.CMS.registerPreviewStyle("/css/main.css");
-    </script>
-    <script>
         var BooleanControl = createClass({
             handleChange: function(e) {
-                this.props.onChange(e.target.is(":checked"));
+                this.props.onChange($(event.target).prop("checked"));
             },
 
             render: function() {
