@@ -14,9 +14,8 @@
     <script src="https://unpkg.com/netlify-cms@^0.3/dist/cms.js"></script>
     <script>
         var BooleanControl = createClass({
-            handleChange: function(e) {
-                this.props.onChange($(e.target).prop("checked"));
-                this.props.value = $(e.target).prop("checked");
+            handleChange: function(e, data) {
+                this.props.onChange(data.checked);
             },
 
             render: function() {
