@@ -3,10 +3,12 @@ layout: unit-page
 title: Routiers
 permalink: /units/routiers
 parrent-page: /units/
-insigne: "/img/b-rs.png"
-description: "Les routiers font suite au pionniers, c'est aussi l'unité la plus vieille dans le parcours jeune"
-short: "mixte 17-25"
+insigne: /img/b-rs.png
 published: true
+short: mixte 17-25
+description: >-
+  Les routiers font suite au pionniers, c'est aussi l'unité la plus vieille dans
+  le parcours jeune
 ---
  
 Sed sollicitudin aliquam scelerisque. Quisque hendrerit mattis urna, et suscipit turpis. Donec sed posuere metus. Suspendisse ultricies euismod diam ac scelerisque. Quisque id mi lorem. Nam ac fermentum neque. Donec ac est a justo feugiat volutpat quis sed arcu. Quisque tincidunt mauris id tortor condimentum, et rutrum dui dignissim. Nullam nec massa vitae eros porttitor accumsan. Vestibulum pharetra diam ut odio molestie, sed dignissim libero rhoncus. Aenean eget elementum urna. Nunc placerat diam non nibh dictum rutrum.
@@ -20,3 +22,4 @@ Nulla vitae neque lobortis, eleifend purus sed, ultricies erat. Cras rutrum enim
 Integer aliquam, libero ac tincidunt bibendum, libero lectus fermentum metus, efficitur consectetur lacus sem a magna. Fusce tristique convallis pulvinar. Fusce quis lectus diam. Vivamus vitae elit vel tortor laoreet posuere. Morbi finibus sed quam sit amet porta. Ut sed dui et velit aliquet congue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
 
 Vivamus tincidunt nec enim feugiat faucibus. Curabitur efficitur finibus consequat. Praesent vestibulum nisi magna. Curabitur commodo felis sed nisi ultricies gravida. Vivamus molestie, nisl ac condimentum blandit, ipsum ligula finibus dolor, et blandit elit purus vel neque. In elit urna, venenatis sit amet est finibus, convallis pulvinar arcu. Ut et efficitur orci, id auctor justo. Fusce elit lectus, aliquam vulputate imperdiet in, mollis et dui.
+
