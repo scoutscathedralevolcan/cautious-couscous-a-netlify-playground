@@ -1,0 +1,27 @@
+backend:
+  name: github
+  repo: scoutscathedralevolcan/cautious-couscous-a-netlify-playground
+  branch: master
+
+media_folder: "img/galeries/{{year}}-{{month}}-{{day}}-{{slug}}"
+publish_mode: editorial_workflow
+
+  - name: "galerie"
+    label: "Galeries"
+    folder: "_galerie-photo"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "galerie-photo"}
+      - {label: "Titre", name: "title", widget: "string"}
+      - {label: "Date de publication", name: "date", widget: "datetime", format: "YYYY-MM-DD hh:mm:ss"}
+      - {label: "Afficher la galerie - (est-ce que la section doit-être affichée?)", name: "published", widget: "boolean", default: true}
+      - name: "image-list"
+        label: "Images de la galerie"
+        widget: "list"
+        required: true
+        fields:
+          - {label: "Image", name: "image_path", widget: "image"}
+          - {label: "Légende", name: "capiton", widget: "string", required: false}
+          - {label: "Auteur", name: "author", widget: "string", required: false}
+          - {label: "Copyright", name: "copyright", widget: "string", required: false}
