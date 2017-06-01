@@ -23,8 +23,12 @@
                 return h('input', { type: 'checkbox', checked: value, onChange: this.handleChange });
             }
         });
+        
+        var dummyBooleanPreview = function (value){
+            return "";
+        }
 
-        window.CMS.registerWidget('boolean', BooleanControl);
+        window.CMS.registerWidget('boolean', BooleanControl, dummyBooleanPreview);
     </script>
 </body>
 </html>
