@@ -6,6 +6,7 @@ backend:
 media_folder: "img/galeries/{{year}}-{{month}}-{{day}}-{{slug}}"
 publish_mode: editorial_workflow
 
+collections:
   - name: "galerie"
     label: "Galeries"
     folder: "_galerie-photo"
