@@ -15,12 +15,12 @@
     <script>
         var BooleanControl = createClass({
             handleChange: function(e, data) {
-                this.props.onChange(data.checked);
+                this.props.onChange(e.target.checked);
             },
 
             render: function() {
                 var value = this.props.value;
-                return h('input', { type: 'checkbox', checked: value, onChange: this.handleChange });
+                return h('input', { type: 'checkbox', checked: value, onclick: this.handleChange });
             }
         });
 
