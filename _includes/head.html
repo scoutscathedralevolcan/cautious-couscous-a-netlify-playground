@@ -18,6 +18,10 @@
   <style>
     {% include critical-css/post.css %}
   </style>
+  {% else if page.layout == "unit-page" %}
+  <style>
+    {% include critical-css/unit-page.css %}
+  </style>
   {% else %}
   <style>
     {% include critical-css/page.css %}
