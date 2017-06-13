@@ -28,3 +28,47 @@
 {% js infinitescroll  %}
 {% js on-page-scroll  %}
 {% js kenburns-gallery  %}
+
+
+<!-- include fullcalandar script -->
+{% js moment.min  %}
+{% js fullcalendar  %}
+{% js fullcalendar-fr-ca  %}
+{% js fullcalendar-gcal  %}
+
+
+<script>
+$(document).ready(function() {
+
+    // page is now ready, initialize the calendar...
+
+    $('#calendar').fullCalendar({
+        header: {
+            center: 'month,listMonth' // buttons for switching between views
+        },
+
+        views: {
+            listMonth: {
+                type: 'agenda',
+                buttonText: 'Liste'
+            }
+        }
+        
+        // put your options and callbacks here
+        /* // Example of googleCalandar usage
+        googleCalendarApiKey: '<YOUR API KEY>',
+        eventSources: [
+            {
+                googleCalendarId: 'abcd1234@group.calendar.google.com',
+                eventColor: '#378006'
+            },
+            {
+                googleCalendarId: 'efgh5678@group.calendar.google.com',
+                className: 'nice-event',
+                eventColor: '#378006'
+            }
+        ]*/
+    })
+
+});
+</script>
